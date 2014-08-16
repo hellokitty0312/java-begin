@@ -1,0 +1,115 @@
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Polygon;
+
+import javax.swing.JComponent;
+import javax.swing.JFrame;
+
+//http://www.java2s.com/Tutorial/Java/0261__2D-Graphics/DrawRectangle.htm
+
+public class House extends JComponent {
+	Roof roof;
+	Wall wall;
+	Door door;
+	int sizeHouse;
+	int offsetY;
+
+	Polygon poly;
+	Color roofColor;
+	Color wallColor;
+	Color DoorColor;
+
+	int frameH = 650;
+	int frameW = 650;
+	
+	int roofBase;
+	int roofHeight;
+	int wallW;
+	int wallH;
+
+	int doorW;
+	int doorH;
+
+	// int sizeHouse = 1;
+	// int sizeHouse = roof.getSize();
+	// int sizeHouse = Math.min(door.size, Math.min(roof.size,wall.size)); // =  THESE ARE NOT BEING INITIALISED
+	// 1, 2, 3;
+
+	// int offsetY = frameH/(sizeHouse*3); // Y offset = position of rooftop
+
+	public House(Roof r, Wall w, Door d) {
+		this.roof = r;
+		this.wall = w;
+		this.door = d;
+	}
+
+	// public static void main(String[] a) {
+
+	public void pleaseDraw() {
+
+		JFrame window = new JFrame();
+		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		window.setBounds(0, 0, frameH, frameW);
+		window.getContentPane().add(new House(roof, wall, door));
+		window.setVisible(true);
+
+	}
+
+	public void paint(Graphics g) {
+
+		sizeHouse = Math.min(door.size, Math.min(roof.size, wall.size)); // = 1,
+																			// 2,
+																			// 3;
+
+		offsetY = frameH / (sizeHouse * 3); // Y offset = position of rooftop;
+
+		roofBase = sizeHouse * 100;
+		roofHeight = roofBase / 3;
+		wallW = sizeHouse * 90;
+		wallH = sizeHouse * 100;
+
+		doorW = wallW / 6;
+		doorH = wallH / 5;
+
+		int[] x = new int[3];
+		int[] y = new int[3];
+		int n; // count of points
+		// Make a triangle
+		x[0] = (int) (frameW / 2 - roofBase);
+		y[0] = offsetY + roofHeight;
+
+		x[1] = (int) frameW / 2;
+		y[1] = offsetY;
+
+		x[2] = (int) (frameW / 2 + roofBase);
+		y[2] = offsetY + roofHeight;
+		n = 3;
+
+		Polygon poly = new Polygon(x, y, n); // a triangle
+		g.setColor(roof.color);
+		g.drawPolygon(poly);
+		g.fillPolygon(poly);
+
+		g.setColor(Color.black);
+		g.drawLine(x[0], y[0], x[1], y[1]);
+		g.drawLine(x[2], y[2], x[1], y[1]);
+		g.drawLine(x[0], y[0], x[2], y[2]);
+
+		// ////////////////////////////////////////
+
+		int wallX = x[0] + wallW / 9;
+		int wallY = y[0];
+		g.setColor(wall.color);
+		g.fillRect(wallX, wallY, 2 * wallW, wallH);
+
+		// ////////////////////////////////
+
+		int doorX = x[1] - doorW / 2;
+		int doorY = wallY + wallH - doorH;
+
+		g.setColor(door.color);
+		g.fillRect(doorX, doorY, doorW, doorH);
+
+	}
+
+}

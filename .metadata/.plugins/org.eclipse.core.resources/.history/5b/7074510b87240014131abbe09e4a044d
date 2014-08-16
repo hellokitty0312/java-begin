@@ -1,0 +1,32 @@
+package homework;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class lx8 {
+
+	public static void main(String[] args) throws IOException {
+		System.out.println("Let's start the game.");
+		int user1 = (int)(Math.random()*13)+1;
+		System.out.println("Your first card is " + user1);
+
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		System.out.println(" Contunie ? yes or no ?");
+		String answer = br.readLine();
+		System.out.println("Your answer is " + answer);
+		String answer1 = "yes";
+		String answer2 = "no";
+
+			if(answer == answer1 ) {
+				int user2 = (int)(Math.random()*13)+1;
+				System.out.println("Your second card is " + user2);
+			}if(answer == answer2) {
+				System.out.println("You have no card.");
+			}
+
+
+
+	}
+
+}

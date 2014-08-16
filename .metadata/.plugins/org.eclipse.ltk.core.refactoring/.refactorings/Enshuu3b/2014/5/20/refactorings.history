@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;Rectangle.java&apos; to &apos;Enchuu&apos;&#x0D;&#x0A;- 元のプロジェクト: &apos;Enshuu3b&apos;&#x0D;&#x0A;- 宛先要素: &apos;Enchuu&apos;&#x0D;&#x0A;- オリジナル要素: &apos;Rectangle.java&apos;&#x0D;&#x0A;- リファクタリングされた要素の参照を更新" description="コンパイル単位を移動" destination="=Enchuu" element1="/src&lt;{Rectangle.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1399787481267" units="1" version="1.0"/>
+</session>

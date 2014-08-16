@@ -1,0 +1,46 @@
+package homework;
+
+import java.util.Scanner;
+
+public class lx7 {
+
+	public static void main(String[] args) {
+
+		String ch = "y";
+		Scanner scan = new Scanner(System.in);
+		String temp[] = {"1.Rock 2.Scissors 3.Paper"};
+
+		do{
+			System.out.println("Please input 1.Rock 2.Scissors 3.Paper?");
+
+		int player = scan.nextInt();
+		if(player < 1 || player > 3) {
+			continue;
+		}
+
+		int computer = new java.util.Random().nextInt(3);
+		computer= computer + 1 ;
+		System.out.println("player is " + temp[player-1]);
+		System.out.println("computer is " + temp[computer-1]);
+		System.out.println("result is ");
+
+		if(player == computer){
+			System.out.println("draw");
+		}
+		else if(player - computer == -1 || player - computer == 2){
+			System.out.println("you win !!!");
+		}
+		else{
+			System.out.println("you lose...");
+		}
+		ch = scanner.next();
+		ch = ch.toLowerCase().trim();
+		}
+		while(ch.equals("y"));
+
+
+
+
+		}
+	}
+

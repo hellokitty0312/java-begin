@@ -1,0 +1,43 @@
+package homework;
+
+	import java.util.Scanner;
+
+	public class lx8 {
+
+	 public static void main(String[] args){
+
+	   String ch="y";
+	   Scanner scan =new Scanner(System.in);
+	   String temp[]={"s","j","b"};
+
+	   do{
+	 System.out.println("Please input  1.s 2.j 3.b");
+
+	 int user=scan.nextInt();
+	 if(user<1 || user>3){
+	  continue;
+	 }
+
+	 int computer=(int) ((Math.random()*3)+1);
+	 System.out.println("playerÅF"+temp[user-1]);
+	 System.out.println("comperÅF"+temp[computer-1]);
+	 System.out.println("resultÅF");
+
+	 if(user==computer){
+	  System.out.println("even");
+	 }
+
+	 else if(user-computer==-1 ||  user-computer==2){
+	  System.out.println("you win");}
+	 else {
+	  System.out.println("you lose,are you continue(y/n)");
+	 }
+
+	  ch = scan.next();
+	  ch=ch.toLowerCase().trim();
+	   }
+	  while(ch.equals("y"));
+	   }
+	   }
+
+

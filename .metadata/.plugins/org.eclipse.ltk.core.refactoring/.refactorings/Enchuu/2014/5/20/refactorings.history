@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;Rectangle.java&apos; to &apos;Assignment0_0.java&apos;&#x0D;&#x0A;- 元のプロジェクト: &apos;Enchuu&apos;&#x0D;&#x0A;- 宛先要素: &apos;Assignment0_0.java&apos;&#x0D;&#x0A;- オリジナル要素: &apos;Rectangle.java&apos;&#x0D;&#x0A;- リファクタリングされた要素の参照を更新" description="ファイルを移動する" destination="=Assignment0_0/src&lt;{Assignment0_0.java" element1="Rectangle.java" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1399787524483" units="0" version="1.0"/>
+</session>

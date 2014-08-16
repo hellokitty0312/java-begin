@@ -1,0 +1,37 @@
+{
+  "C:\\Users\\wu song yang\\Desktop\\Eclipse4.3\\eclipse\\jre\\lib\\rt.jar": {
+    "location": "C:\\Users\\wu song yang\\Desktop\\Eclipse4.3\\eclipse\\jre\\lib\\rt.jar",
+    "status": "UNRESOLVED",
+    "error": "No call model found for \u0027C:\\Users\\wu song yang\\Desktop\\Eclipse4.3\\eclipse\\jre\\lib\\rt.jar\u0027. Neither fingerprint \u00271b5877470adcb83b82d13fbfd76b009d7a9f2e7f\u0027 nor symbolic name \u0027jre\u0027 are known."
+  },
+  "C:\\Users\\wu song yang\\Desktop\\Eclipse4.3\\workspace\\Assignment0_1\\src": {
+    "location": "C:\\Users\\wu song yang\\Desktop\\Eclipse4.3\\workspace\\Assignment0_1\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\wu song yang\\Desktop\\Eclipse4.3\\workspace\\Assignment0_1\\src\u0027. Skipped."
+  },
+  "C:\\Users\\wu song yang\\Desktop\\Eclipse4.3\\workspace\\Assignment0_2\\src": {
+    "location": "C:\\Users\\wu song yang\\Desktop\\Eclipse4.3\\workspace\\Assignment0_2\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\wu song yang\\Desktop\\Eclipse4.3\\workspace\\Assignment0_2\\src\u0027. Skipped."
+  },
+  "C:\\Users\\wu song yang\\Desktop\\Eclipse4.3\\workspace\\Enshuu1\\src": {
+    "location": "C:\\Users\\wu song yang\\Desktop\\Eclipse4.3\\workspace\\Enshuu1\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\wu song yang\\Desktop\\Eclipse4.3\\workspace\\Enshuu1\\src\u0027. Skipped."
+  },
+  "C:\\Users\\wu song yang\\Desktop\\Eclipse4.3\\workspace\\Enshuu3\\src": {
+    "location": "C:\\Users\\wu song yang\\Desktop\\Eclipse4.3\\workspace\\Enshuu3\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\wu song yang\\Desktop\\Eclipse4.3\\workspace\\Enshuu3\\src\u0027. Skipped."
+  },
+  "C:\\Users\\wu song yang\\Desktop\\Eclipse4.3\\workspace\\Enshuu4\\src": {
+    "location": "C:\\Users\\wu song yang\\Desktop\\Eclipse4.3\\workspace\\Enshuu4\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\wu song yang\\Desktop\\Eclipse4.3\\workspace\\Enshuu4\\src\u0027. Skipped."
+  },
+  "C:\\Users\\wu song yang\\Desktop\\Eclipse4.3\\workspace\\Drink\\src": {
+    "location": "C:\\Users\\wu song yang\\Desktop\\Eclipse4.3\\workspace\\Drink\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\wu song yang\\Desktop\\Eclipse4.3\\workspace\\Drink\\src\u0027. Skipped."
+  }
+}

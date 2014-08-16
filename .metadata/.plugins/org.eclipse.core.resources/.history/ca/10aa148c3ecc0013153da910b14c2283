@@ -1,0 +1,17 @@
+
+public class Program1_3 {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+
+		Roof r1=new Roof(1,"plastic",Color green);
+
+		double x1=r1 area();
+		doubley1=r1 unitMaterialCost=x1*y1;
+		System out.println("Total material coat is:"+totalNaterialCoat);
+
+
+
+	}
+
+}

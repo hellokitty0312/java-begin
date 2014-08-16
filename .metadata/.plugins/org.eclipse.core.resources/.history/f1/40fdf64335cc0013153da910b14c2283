@@ -1,0 +1,15 @@
+
+public class Program1_0 {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+
+	double x=Math.E;
+
+	System.out.println("e="+x);
+
+
+
+	}
+
+}

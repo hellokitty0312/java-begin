@@ -1,0 +1,28 @@
+import java.awt.Color;
+
+public class Program1_2 {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+
+	int size;
+	String meterial;
+	Color ire;
+
+	int size=1;
+	meterial="plastic";
+
+	iro=java.awt.Color.green;
+
+	Roof r1=new Roof(size,material,iro);
+
+	System.out.println("屋根を作りました");
+	System.out.println("サイズ"+size);
+	System.out.println("素材"+meterial);
+	System.out.println("色"+ire);
+
+
+
+	}
+
+}

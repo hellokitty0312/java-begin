@@ -1,0 +1,42 @@
+package homework;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class lx8 {
+
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		System.out.println("Let's start the game.");
+		int user = (int)(Math.random()*13)+1;
+		String str = br.readLine();
+		System.out.println("continue? Y/N");
+		String answer = br.readLine();
+
+
+
+
+
+
+		if(sum_system < sum_user && sum_system < 21) {
+			int system = (int)(Math.random()*13)+1;
+		}
+
+
+		if(sum_user > 21) {
+			System.out.println("Computer is win.");
+		}else if(sum_user == 21 && sum_system == 21 || sum_user < 21 && sum_system <21 && sum_user == sum_system){
+			System.out.println("Computer is win.");
+		}else if(sum_user < 21) {
+			if(sum_system > sum_user && sum_system < 21){
+				System.out.println("Computer is win.");
+			}else if(sum_system > 21) {
+				System.out.println("Computer is lose.");
+			}
+		}
+
+
+	}
+
+}
